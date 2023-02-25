@@ -21,7 +21,6 @@ def predict():
 
     totalSavings = (float(totalIncome) - float(totalExpenses)) / float(totalIncome) * 100
     totalSavings = "%.2f" % totalSavings
-    print(totalSavings)
 
     input_query1 = np.array([[income, totalSavings]], dtype=float)
     input_query2 = np.array([[totalExpenses, totalIncome, totalSavings]], dtype=float)
